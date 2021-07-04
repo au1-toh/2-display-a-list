@@ -1,0 +1,8 @@
+<template bindable="hero">
+  <h2>${hero.name} Details</h2>
+  <div><span>id: </span>${hero.id}</div>
+  <div>
+    <label for="name">Hero name: </label>
+    <input id="name" value.bind="hero.name" placeholder="name">
+  </div>
+</template>
