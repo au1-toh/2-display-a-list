@@ -1,5 +1,5 @@
-import {FrameworkConfiguration} from 'aurelia-framework';
+import {FrameworkConfiguration, PLATFORM } from 'aurelia-framework';
 
 export function configure(config: FrameworkConfiguration): void {
-  //config.globalResources([]);
+  config.globalResources([PLATFORM.moduleName('./value-converters/upper-case')]);
 }
